@@ -1,0 +1,40 @@
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.all {
+    background-color: blue;
+    color: black;
+}
+
+.card-body,
+.card-title {
+    margin: 10px 10px 10px 10px;
+    padding-right: 20px;
+}
+
+.card {
+    background-color: black;
+    box-shadow: 0 0 10px #5B5754;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+input {
+    box-shadow: 0 0 10px #5B5754;
+}
+
+h1,
+h3 {
+    text-shadow: 0 0 10px #1F0F04;
+}
+
+h1 {
+    font-family: sans-serif;
+    padding-bottom: 20px;
+}
+
+h3 {
+    font-family: sans-serif;
+}

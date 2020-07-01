@@ -1,0 +1,146 @@
+<div class="container-fluid">
+    <div class="all">
+        <ng-progress></ng-progress>
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcR1dT9hGZ0oSPcRICyNOTRpKQ9MGP6sGbkqzvz891TaNmLN6JD6&usqp=CAU" alt="git" width="150" height="150" class="logo">
+
+                <h1 class="display-4 text-center animated slideInLeft">~ GitHub Search ~</h1>
+                <div class="row">
+                    <div class="col-md-6">
+                        <h3 class="text-center">Input Information</h3>
+                        <form #form='ngForm'(ngSubmit)="getProfile() " class="form-group" id="">
+                            <input type="text" class="form-control" placeholder="Input your Username" [(ngModel)]="Username" name="Username" (keyup)="getProfile()" maxlength="20">
+                            <br>
+                            <button class="btn btn-primary">Search</button>
+                        </form>
+                    </div>
+        
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-title">
+                                <h3 class="text-center info">Users Profile</h3>
+                            </div>
+        
+                            <div class="card-body">
+                                <div *ngIf="searchUsers">
+                                    <div>
+                                        <img src="{{user.avatar_url}}" alt="profile" class="img-fluid rounded-circle img-responsive">
+
+        <h1 class="display-4 text-center animated slideInLeft">~ GitHub-Search ~</h1>
+        <div class="row">
+            <div class="col-md-6">
+                <h3 class="text-center">Input Information</h3>
+                <form class="form-group" id="">
+                    <input type="text" class="form-control" placeholder="Input your username" [(ngModel)]="username" name="username" (keyup)="getProfile()" maxlength="20">
+                    <br>
+                    <button class="btn btn-primary">Search</button>
+                </form>
+            </div>
+
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-title">
+                        <h3 class="text-center info">Users Profile</h3>
+                    </div>
+
+                    <div class="card-body">
+                        <div *ngIf="searchUsers">
+                            <div>
+                                <img src="{{user.avatar_url}}" alt="profile" class="img-fluid rounded-circle img-responsive">
+                            </div>
+                            <br>
+                            <div>
+                                <a href="{{user.html_url}}" target="_blank"><button class="btn btn-success">Go To Profile</button></a>
+                                <br>
+                            </div>
+
+                            <div>
+
+
+                                <h4>{{user.name}}</h4>
+                                <div class="row">
+                                    <div class="col-sm-4">
+                                        <p class="btn btn-warning">Followers:<br><span>{{user.followers}}</span></p>
+>>>>>>> 48140bbae1bdfc33e0770ac7893d12005bb922e9
+                                    </div>
+                                    <br>
+                                    <div>
+                                        <a href="{{user.html_url}}" target="_blank"><button class="btn btn-success">Go To Profile</button></a>
+                                        <br>
+                                    </div>
+<<<<<<< HEAD
+        
+                                    <div>
+        
+        
+                                        <h4>{{user.name}}</h4>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p class="btn btn-warning">Followers:<br><span>{{user.followers}}</span></p>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p class="btn btn-danger">Following:<br><span>{{user.following}}</span></p>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <p class="btn btn-info">Repositories:<br><span>{{user.public_repositories}}</span></p>
+                                            </div>
+                                        </div>
+=======
+                                    <div class="col-sm-4">
+                                        <p class="btn btn-info">Repositories:<br><span>{{user.public_repositories}}</span></p>
+>>>>>>> 48140bbae1bdfc33e0770ac7893d12005bb922e9
+                                    </div>
+        
+                                </div>
+<<<<<<< HEAD
+        
+                            </div>
+        
+                            <div *ngIf="!searchUsers">
+                                <div class="container repo-row">
+                                    <div *ngFor="let rep of repo" class="card">
+                                        <a href="{{rep.html_url}}" target="_blank">
+                                            <h3>{{rep.name}}</h3>
+                                            <p>{{rep.description}}</p>
+                                            <!-- <p>{{rep.created_at |dateCount}}</p> -->
+                                        </a>
+        
+                                    </div>
+        
+        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+            </div>
+        </div>
+=======
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div *ngIf="!searchUsers">
+                        <div class="container repo-row">
+                            <div *ngFor="let rep of repo" class="card">
+                                <a href="{{rep.html_url}}" target="_blank">
+                                    <h3>{{rep.name}}</h3>
+                                    <p>{{rep.description}}</p>
+                                    <!-- <p>{{rep.created_at |dateCount}}</p> -->
+                                </a>
+
+                            </div>
+
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</div>
